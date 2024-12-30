@@ -1,0 +1,16 @@
+details {
+  padding-top: var(--pico-nav-element-spacing-vertical);
+}
+.sideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 300px;
+  padding: 1rem;
+  overflow-y: auto;
+}
+.container {
+  margin-left: 300px; /* Matches the width of .side-nav */
+  padding: 1rem;
+}

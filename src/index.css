@@ -1,0 +1,31 @@
+#theme-toggle-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sun-core {
+  fill: var(--pico-primary);
+}
+
+.sun-rays {
+  stroke: var(--pico-primary);
+  stroke-width: 1.5;
+}
+
+.moon {
+  fill: var(--pico-muted-color);
+  transition: opacity 0.3s ease;
+}
+
+[data-theme="dark"] #theme-toggle-icon .sun-core,
+[data-theme="dark"] #theme-toggle-icon .sun-rays {
+  opacity: 0;
+}
+
+[data-theme="dark"] #theme-toggle-icon .moon {
+  opacity: 1;
+}
+
+[data-theme="light"] #theme-toggle-icon .moon {
+  opacity: 0;
+}
